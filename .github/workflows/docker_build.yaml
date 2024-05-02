@@ -40,5 +40,5 @@ jobs:
 
       - name: Build Inventory Image
         run: |
-          docker build . --tag ghcr.io/lfventura/kafka-cosmosdb-topic-ts-exporter:latest --tag ghcr.io/lfventura/kafka-cosmosdb-topic-ts-exporter:${{ steps.bump.outputs.new_tag }}
-          docker push ghcr.io/lfventura/kafka-cosmosdb-topic-ts-exporter --all-tags
+          docker build . --tag ghcr.io/lfventura/confluent-connectors-status-exporter:latest --tag ghcr.io/lfventura/confluent-connectors-status-exporter:${{ steps.bump.outputs.new_tag }}
+          docker push ghcr.io/lfventura/confluent-connectors-status-exporter --all-tags
